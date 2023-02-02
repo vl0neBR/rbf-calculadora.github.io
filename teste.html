@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Folga</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="index.js"> </script>
+</head>
+<body>
+
+  <h1>CALCULADORA<br>RBF MOTOS</h1>
+  <p class="folga-past">Folga de Pastilha</p>
+  <div class="calculadora">
+    <p>Folga Encontrada</p>
+    <input type="number" placeholder="Folga Encontrada" id="folgaencontrada">
+
+    <p>Pastilha</p>
+    <input type="number" placeholder="Pastilha Atual" id="pastilha">
+
+    <p>Manual</p>
+      <input type="number" placeholder="Folga do Manual" id="manual">
+      <p>
+        Resultado <input class="resultado" placeholder="Resultado" type="number" id="result" disabled>
+      </p>
+      <div class="botoes">
+        <button  class="botao" id="botao" onclick="calcular()">Calcular</button>
+        <button class="botao" id="apagar" onclick="apagar()">Apagar</button>
+      </div>
+
+
+  </div>
+
+
+</body>
+</html>
