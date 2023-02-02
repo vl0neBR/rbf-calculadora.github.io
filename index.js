@@ -12,6 +12,24 @@ function calcular() {
   var result = folgaEncontrada + pastilhaAtual - manual
 
   document.getElementById('result').value = result
+
+
+
+
+  let folgaEncontrada1 = document.getElementById('folgaencontrada').value
+  let pastilhaAtual1 = document.getElementById('pastilha').value 
+  let manual1 = document.getElementById('manual').value
+
+  let errorMessage = document.getElementById('errorMessage')
+  
+  if (folgaEncontrada1 == "" || pastilhaAtual1 == "" || manual1 == "" ) {
+    alert('Preencha Todos os Campos Antes de Calcular')
+    errorMessage.style.display = "block"
+  }
+  else {
+    errorMessage.style.display = "none"
+  }
+
 }
 
 function apagar() {
